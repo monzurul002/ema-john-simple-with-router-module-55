@@ -1,0 +1,63 @@
+.form-container{
+    border: 1px solid tomato;
+    width: 600px;
+    height: 450px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: rgba(255, 248, 220, 0.555);
+   margin-top: 22px;
+   box-shadow: 10px 6px 10px gray;
+}
+.form-title{
+    text-align: center;
+    
+}
+.form-area{
+    width: 50%;
+    margin:0 auto;
+}
+
+label {
+    display: block;
+    
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.form-control input {
+    width: 320px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    padding-left: 5px;
+}
+/* .password-label {
+    margin-right: 82px;
+} */
+
+.btn-submit{
+    margin-top: 15px;
+    padding:10px;
+    width: 330px;
+    background-color: coral;
+    border: none;
+    border-radius: 5px;
+    color:#FFF;
+    font-size: 18px;
+}
+
+.google-area{
+    
+     width: 50%;
+     margin: 0 auto;
+    margin-top: 15px;
+    border: 1px solid gray;
+    
+}
+.google-area button{
+    
+}
+
+.text-error{
+    color: red;
+}
