@@ -8,9 +8,9 @@ const Login = () => {
     const [error, setError] = useState(null);
     const navigate = useNavigate()
     const location = useLocation()
-    console.log(location);
+    const [show,setShow]=useState(false)
 
-    console.log(location.state.from.pathname);
+    
     const handleSignIn = (e) => {
         e.preventDefault()
         const form = e.target;
@@ -31,6 +31,7 @@ const Login = () => {
 
     }
 
+    
 
     return (
         <div className='form-container'>
@@ -41,12 +42,16 @@ const Login = () => {
                     <div className="form-control">
                         <label htmlFor="email">Email</label>
                         <input type="email" name="email" required />
+                        
                     </div>
                     <br />
                     <div className="form-control">
                         <label className='password-label' htmlFor="password">Password</label>
-                        <input type="password" name="password" required />
+                        <input type={show ? "text":"password"} name="password" required />
+                        {/* <input type="password" name="password" required /> */}
+                        <p><small onClick={()=>{ setShow(!show)}}>Show</small> </p>
                     </div>
+                    
 
                     <input className='btn-submit' type="submit" value="Login" />
                 </form>

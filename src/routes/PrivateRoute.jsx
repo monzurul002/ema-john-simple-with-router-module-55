@@ -7,7 +7,7 @@ const PrivateRoute = ({children}) => {
     console.log(location.pathname);
     const {user,loading}=useContext(AuthContext);
     if(loading){
-        return <h2>Loading...</h2>
+        return <h2>Loading...lorem2 lorem200  </h2>
     }
     if(user){
     return children
